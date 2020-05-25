@@ -31,7 +31,7 @@ See below for the options of each command. These may include parameters, and the
   - allowed set of values: `(a/b/c)`
   - default value if option is not present: `[a]`
 
-Value types:
+### Value types:
   - `<N>`: integer
   - `<F>`: floating-point
   - `<S>`: string
@@ -44,7 +44,7 @@ Value types:
 - `-version <N>`  AnalogSAT GPU solver version `(1/2/3) [1]`
 - `-nogpu`        Use the AnalogSAT CPU solver, do not call any GPU functions
 - `-minisat`      Use the MiniSat solver (CPU), do not call any GPU functions
-- `-usegpu <N>`   Use CUDA device number N (via CudaSetDevice(N)) `(0::99) [0]`
+- `-usegpu <N>`   Use CUDA device number N (via `CudaSetDevice(N)`) `(0::99) [0]`
 - `-tanh`         Use the alternative CTDS formulation, which is based on the
               Tanh formula for evolving the auxiliary variables.
 - `-bias <F>`     Coefficient for the bias term in the CTDS `(0::1e6) [0]`
@@ -129,41 +129,37 @@ where `n` is a parameter that varies in a loop, given via Options (see below).
 - `-nstep <F>`          Step value of the problem size exponent `(0::100) [0.5]`
 - `-rerun`              Run the given sample, even if it has been solved before
 
-4. The 'speedtest' command
---------------------------
+## The `speedtest` command
 
-4.1. Description
-----------------
+### Description
 
 Measures the iteration performance on a series of problems. Iterations are
 repeated up to 5 seconds walltime regardless of finding a solution or not. If
 a solution is found, the problem is solved again from random initial 
-conditions. Note, the -timeout option is respected for each individual run.
+conditions. Note, the `-timeout` option is respected for each individual run.
 
-Problems must already exists for speedtest. To make them, use the 'bench'
+Problems must already exists for speedtest. To make them, use the `bench`
 command mode.
 
 
-4.2. Options
-------------
--problemfolder <S>  Folder from where the CNF files are loaded.
--resultfolder <S>   Folder where the results are saved.
--samplestart <N>    Start index for problem samples, inclusive (0::9999) [0]
--sampleend <N>      End index for problem samples, exclusive (0::10000) [100]
--alpha <F>          The ratio of clauses made, relative to the number of
-                    variables in the problem (0::1e10) [4.25]
--nstart <F>         Starting value of the problem size exponent, inclusive,
-                    (1::100) [1.0]
--nend <F>           Ending value of the problem size exponent, inclusive,
-                    (1::100) [5.0]
--nstep <F>          Step value of the problem size exponent (0::100) [0.5]
+### Options
+
+- `-problemfolder <S>`  Folder from where the CNF files are loaded.
+- `-resultfolder <S>`   Folder where the results are saved.
+- `-samplestart <N>`    Start index for problem samples, inclusive `(0::9999) [0]`
+- `-sampleend <N>`      End index for problem samples, exclusive `(0::10000) [100]`
+- `-alpha <F>`          The ratio of clauses made, relative to the number of
+                    variables in the problem `(0::1e10) [4.25]`
+- `-nstart <F>`         Starting value of the problem size exponent, inclusive,
+                    `(1::100) [1.0]`
+- `-nend <F>`           Ending value of the problem size exponent, inclusive,
+                    `(1::100) [5.0]`
+- `-nstep <F>`          Step value of the problem size exponent `(0::100) [0.5]`
 
 
-5. The 'make_ramsey' command
-----------------------------
+## The `make_ramsey` command
 
-5.1. Description
-----------------
+### Description
 
 Creates a CNF representation for a series of Ramsey graph coloring problems.
 
@@ -191,34 +187,31 @@ color values for each edge (1 bit for 2 colors, 2 bits for 3 or 4 colors, and
 cliques. Thus, solving such a SAT problem gives also a valid edge coloring.
 
 
-5.2. Options
-------------
+### Options
 
--R <S>              Comma-separated list of integers that specify the
-                    Ramsey problem. E.g., -R 3,4,5 for problem R(3,4,5).
--problemfolder <S>  Folder where the CNF files for Ramsey problems are saved.
--nstart <N>         Starting size N for the number of nodes in the graph.
--nend <N>           Ending size N for the number of nodes in the graph 
+- `-R <S>`              Comma-separated list of integers that specify the
+                    Ramsey problem. E.g., `-R 3,4,5` for problem R(3,4,5).
+- `-problemfolder <S>`  Folder where the CNF files for Ramsey problems are saved.
+- `-nstart <N>`         Starting size N for the number of nodes in the graph.
+- `-nend <N>`           Ending size N for the number of nodes in the graph 
                     (inclusive).
--ramseycircular     Add the constraint that the adjacency matrix of the graph
+- `-ramseycircular`     Add the constraint that the adjacency matrix of the graph
                     is a circulant matrix. 
 
-6. The 'run_ramsey' command
----------------------------
+## The `run_ramsey` command
 
-Runs the Ramsey problems created by the 'make_ramsey' command.
+Runs the Ramsey problems created by the `make_ramsey` command.
 Saves the solving time, as well as the found graph coloring.
 
 
-6.2. Options
-------------
+### Options
 
--R <S>              Comma-separated list of integers that specify the
-                    Ramsey problem. E.g., -R 3,4,5 for problem R(3,4,5).
--problemfolder <S>  Folder where the CNF files for Ramsey problems are saved.
--resultfolder <S>   Folder where results are saved.
--nstart <N>         Starting size N for the number of nodes in the graph.
--nend <N>           Ending size N for the number of nodes in the graph 
+- `-R <S>`              Comma-separated list of integers that specify the
+                    Ramsey problem. E.g., `-R 3,4,5` for problem R(3,4,5).
+- `-problemfolder <S>`  Folder where the CNF files for Ramsey problems are saved.
+- `-resultfolder <S>`   Folder where results are saved.
+- `-nstart <N>`         Starting size N for the number of nodes in the graph.
+- `-nend <N>`           Ending size N for the number of nodes in the graph 
                     (inclusive).
--ramseycircular     Add the constraint that the adjacency matrix of the graph
+- `-ramseycircular`     Add the constraint that the adjacency matrix of the graph
                     is a circulant matrix. 
