@@ -1,0 +1,12 @@
+To compile the MiniSat library, you can use one of the following:
+
+- On Windows, use the Visual Studio project, wrapped in either the
+  local Solution file (MiniSatLib.sln), which compiles only the library,
+  or use the main Solution file (../AnalogSat.sln) and compile it along
+  with the rest of the AnalogSat package.
+
+- On Linux or Mac, use the provided "build.sh" shell script. The script uses
+  the NVIDIA CUDA compiler "nvcc", even though the code does not use CUDA.
+  This is done to avoid any incompatibility when linking this library
+  with AnalogSat and its Frontend together, the latter requiring nvcc.
+

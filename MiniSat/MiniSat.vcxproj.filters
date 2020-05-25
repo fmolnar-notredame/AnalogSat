@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{34543be6-ecb9-4fbb-a6de-eec02fe5ded2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtl">
+      <UniqueIdentifier>{83a08901-406c-4c6f-bb2c-aca78067a03d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{31526930-4459-4176-8b9f-dd59ef17d2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d085c59f-ff2e-4b0f-8768-7929f5435c97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\Main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Solver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Options.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\System.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\Dimacs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Solver.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\SolverTypes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Alg.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Alloc.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Heap.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\IntTypes.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Map.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Queue.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Sort.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\Vec.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="mtl\XAlloc.h">
+      <Filter>mtl</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Options.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ParseUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\System.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\minisat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MemParse.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
