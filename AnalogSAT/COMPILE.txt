@@ -1,0 +1,14 @@
+To compile the AnalogSat library, you can use one of the following:
+
+- On Windows, use the Visual Studio project, wrapped in either the
+  local Solution file (AnalogSatLib.sln), which compiles only the library,
+  or use the main Solution file (../AnalogSat.sln) and compile it along
+  with the rest of the AnalogSat package. The library requires the
+  NVIDIA CUDA Toolkit to be installed.
+
+- On Linux, use the provided "build.sh" shell script. The script requires
+  the NVIDIA CUDA compiler "nvcc". The first lines of the script defines
+  the CUDA architectures and compute capabilities that will be used for
+  compilation. Make sure your GPU's compute capability is included among
+  them.
+

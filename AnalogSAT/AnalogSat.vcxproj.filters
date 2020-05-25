@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cpu_sat">
+      <UniqueIdentifier>{a9ad41f0-3e00-46ab-a268-9b07e5e635d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda_base">
+      <UniqueIdentifier>{9826f4c2-e4d0-46f2-b2dc-e75b012862dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda_sat">
+      <UniqueIdentifier>{57fe7328-28aa-4a2b-ba7a-32330267bae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{22d6273c-10a6-4c70-a90e-41eb0750e23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="problem">
+      <UniqueIdentifier>{f0c46cea-c7d3-4aaa-b589-af22e2d94ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="solver">
+      <UniqueIdentifier>{5f91f1df-4687-4fc6-befb-1a17239f1399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{1a40f55d-b499-4036-ae2a-c1be5d0370fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e21206f4-fc06-4142-af01-2565e1d598b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpu_sat\cpu_helper.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_sat\CpuRandom.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_sat\CpuRungeKutta.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_sat\CpuSat.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_sat\CpuSatStateImpl.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cpu_sat\CpuSatTanh.h">
+      <Filter>cpu_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaRandom.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaReduce.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaSatState1.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaSatState2.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaSatStateImpl.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaSatStructs.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_base\CudaUtils.h">
+      <Filter>cuda_base</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSat1.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSat2.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSat3.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSatBase.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSatTanh1.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSatTanh2.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaSatTanh3.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="io\CnfReader.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\CnfWriter.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\FastSatMaker.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\IntSet.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\ISatMaker.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\PlantedSatMaker.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\RandomSatMaker.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="util\cpuidtool.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\gpuidtool.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Hash.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\path.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\VectorHash.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Wallclock.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\IODE.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\IODEInt.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\IODEState.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\ISat.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\ISatRandom.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\ISatState.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\SatResult.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\SatSolver.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\SatState.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\analogsat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_sat\CudaRungeKutta.h">
+      <Filter>cuda_sat</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\Clause.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\ClauseHelper.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\SatLiteral.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+    <ClInclude Include="problem\SatProblem.h">
+      <Filter>problem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu_sat\CpuRandom.cpp">
+      <Filter>cpu_sat</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu_sat\CpuRungeKutta.cpp">
+      <Filter>cpu_sat</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu_sat\CpuSat.cpp">
+      <Filter>cpu_sat</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu_sat\CpuSatTanh.cpp">
+      <Filter>cpu_sat</Filter>
+    </ClCompile>
+    <ClCompile Include="io\CnfReader.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\CnfWriter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\FastSatMaker.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\IntSet.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\PlantedSatMaker.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\RandomSatMaker.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+    <ClCompile Include="util\cpuidtool.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\gpuidtool.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Hash.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\path.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\utils.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Wallclock.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="solver\SatResult.cpp">
+      <Filter>solver</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\Clause.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+    <ClCompile Include="problem\SatProblem.cpp">
+      <Filter>problem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="cuda_base\CudaRandom.cu">
+      <Filter>cuda_base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_base\CudaReduce.cu">
+      <Filter>cuda_base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_base\CudaUtils.cu">
+      <Filter>cuda_base</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSat1.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSat2.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSat3.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSatBase.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSatTanh1.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSatTanh2.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaSatTanh3.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_sat\CudaRungeKutta.cu">
+      <Filter>cuda_sat</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

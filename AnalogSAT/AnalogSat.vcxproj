@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpu_sat\CpuRandom.h" />
+    <ClInclude Include="cpu_sat\CpuRungeKutta.h" />
+    <ClInclude Include="cpu_sat\CpuSat.h" />
+    <ClInclude Include="cpu_sat\CpuSatStateImpl.h" />
+    <ClInclude Include="cpu_sat\CpuSatTanh.h" />
+    <ClInclude Include="cpu_sat\cpu_helper.h" />
+    <ClInclude Include="cuda_base\CudaRandom.h" />
+    <ClInclude Include="cuda_base\CudaReduce.h" />
+    <ClInclude Include="cuda_base\CudaSatState1.h" />
+    <ClInclude Include="cuda_base\CudaSatState2.h" />
+    <ClInclude Include="cuda_base\CudaSatStateImpl.h" />
+    <ClInclude Include="cuda_base\CudaSatStructs.h" />
+    <ClInclude Include="cuda_base\CudaUtils.h" />
+    <ClInclude Include="cuda_sat\CudaRungeKutta.h" />
+    <ClInclude Include="cuda_sat\CudaSat1.h" />
+    <ClInclude Include="cuda_sat\CudaSat2.h" />
+    <ClInclude Include="cuda_sat\CudaSat3.h" />
+    <ClInclude Include="cuda_sat\CudaSatBase.h" />
+    <ClInclude Include="cuda_sat\CudaSatTanh1.h" />
+    <ClInclude Include="cuda_sat\CudaSatTanh2.h" />
+    <ClInclude Include="cuda_sat\CudaSatTanh3.h" />
+    <ClInclude Include="include\analogsat.h" />
+    <ClInclude Include="io\CnfReader.h" />
+    <ClInclude Include="io\CnfWriter.h" />
+    <ClInclude Include="problem\Clause.h" />
+    <ClInclude Include="problem\ClauseHelper.h" />
+    <ClInclude Include="problem\FastSatMaker.h" />
+    <ClInclude Include="problem\IntSet.h" />
+    <ClInclude Include="problem\ISatMaker.h" />
+    <ClInclude Include="problem\PlantedSatMaker.h" />
+    <ClInclude Include="problem\RandomSatMaker.h" />
+    <ClInclude Include="problem\SatLiteral.h" />
+    <ClInclude Include="problem\SatProblem.h" />
+    <ClInclude Include="solver\IODE.h" />
+    <ClInclude Include="solver\IODEInt.h" />
+    <ClInclude Include="solver\IODEState.h" />
+    <ClInclude Include="solver\ISat.h" />
+    <ClInclude Include="solver\ISatRandom.h" />
+    <ClInclude Include="solver\ISatState.h" />
+    <ClInclude Include="solver\SatResult.h" />
+    <ClInclude Include="solver\SatSolver.h" />
+    <ClInclude Include="solver\SatState.h" />
+    <ClInclude Include="util\cpuidtool.h" />
+    <ClInclude Include="util\gpuidtool.h" />
+    <ClInclude Include="util\Hash.h" />
+    <ClInclude Include="util\path.h" />
+    <ClInclude Include="util\utils.h" />
+    <ClInclude Include="util\VectorHash.h" />
+    <ClInclude Include="util\Wallclock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpu_sat\CpuRandom.cpp" />
+    <ClCompile Include="cpu_sat\CpuRungeKutta.cpp" />
+    <ClCompile Include="cpu_sat\CpuSat.cpp" />
+    <ClCompile Include="cpu_sat\CpuSatTanh.cpp" />
+    <ClCompile Include="io\CnfReader.cpp" />
+    <ClCompile Include="io\CnfWriter.cpp" />
+    <ClCompile Include="problem\Clause.cpp" />
+    <ClCompile Include="problem\FastSatMaker.cpp" />
+    <ClCompile Include="problem\IntSet.cpp" />
+    <ClCompile Include="problem\PlantedSatMaker.cpp" />
+    <ClCompile Include="problem\RandomSatMaker.cpp" />
+    <ClCompile Include="problem\SatProblem.cpp" />
+    <ClCompile Include="solver\SatResult.cpp" />
+    <ClCompile Include="util\cpuidtool.cpp" />
+    <ClCompile Include="util\gpuidtool.cpp" />
+    <ClCompile Include="util\Hash.cpp" />
+    <ClCompile Include="util\path.cpp" />
+    <ClCompile Include="util\utils.cpp" />
+    <ClCompile Include="util\Wallclock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="cuda_base\CudaRandom.cu" />
+    <CudaCompile Include="cuda_base\CudaReduce.cu" />
+    <CudaCompile Include="cuda_base\CudaUtils.cu" />
+    <CudaCompile Include="cuda_sat\CudaRungeKutta.cu" />
+    <CudaCompile Include="cuda_sat\CudaSat1.cu" />
+    <CudaCompile Include="cuda_sat\CudaSat2.cu" />
+    <CudaCompile Include="cuda_sat\CudaSat3.cu" />
+    <CudaCompile Include="cuda_sat\CudaSatBase.cu" />
+    <CudaCompile Include="cuda_sat\CudaSatTanh1.cu" />
+    <CudaCompile Include="cuda_sat\CudaSatTanh2.cu" />
+    <CudaCompile Include="cuda_sat\CudaSatTanh3.cu" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF56133D-B0C5-4F8A-9D14-A102BEF08613}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(ProjectDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(ProjectDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <CudaLink>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </CudaLink>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+    <CudaCompile>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_52,sm_52;compute_61,sm_61</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CudaLink>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </CudaLink>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+    <CudaCompile>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_52,sm_52;compute_61,sm_61</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.2.targets" />
+  </ImportGroup>
+</Project>
