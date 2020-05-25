@@ -63,8 +63,7 @@ Value types:
 ## The `run` command
 
 
-2.1. Description
-----------------
+### Description
 
 Runs a given SAT problem from a CNF file.
 Input file must be in DIMACS CNF format.
@@ -74,25 +73,23 @@ File naming: the CNF file name (without extension and path) is the problem's
 name, which is used as prefix for all output files for a given problem.
 
 For example, given the input
-/some/where/abcde.cnf,
+`/some/where/abcde.cnf`,
 the outputs will be:
-<resultfolder>/abcde.out  for the SAT solution,
-<resultfolder>/abcde_traj_<solverfamily>.dat  for the trajectory (when enabled)
+`<resultfolder>/abcde.out`  for the SAT solution,
+`<resultfolder>/abcde_traj_<solverfamily>.dat`  for the trajectory (when enabled)
 
-2.2. Options
-------------
--problem <S>        Name of the input CNF file.
--resultfolder <S>   Folder where the results are saved. Folder is created if
-                    it does not exist. [.]
--trajectory         Save the trajectory of the integrated CTDS. The trajectory
-                    is saved at the resolution specified by -batch. 
+### Options
+
+- `-problem <S>`        Name of the input CNF file.
+- `-resultfolder <S>`   Folder where the results are saved. Folder is created if
+                    it does not exist. `[.]`
+- `-trajectory`         Save the trajectory of the integrated CTDS. The trajectory
+                    is saved at the resolution specified by `-batch`. 
 
 
-3. The 'bench' command
-----------------------
+## The `bench` command
 
-3.1. Description
-----------------
+### Description
 
 Runs a series of random SAT problems and measures the solving time.
 
@@ -103,36 +100,34 @@ sample index.
 If a problem with a given sample index is found satisfiable, the corresponding
 CNF file is written to the <problemfolder>. This file will be loaded the next
 time this sample index is requested. Saving (and overwriting existing) CNFs
-can be forced regardless of satisfiability by -force_save_cnf.
+can be forced regardless of satisfiability by `-force_save_cnf`.
 
-Results are written to <resultfolder>, using the 'perf' prefix, and problem
-class identifiers in the file name. See the Manual.pdf for details on content.
+Results are written to `<resultfolder>`, using the `perf` prefix, and problem
+class identifiers in the file name. 
 
 The number of variables in a problem is computed using the following formula:
-N = 10 * (2^n),
-where n is a parameter that varies in a loop, given via Options (see below).
+`N = 10 * (2^n)`,
+where `n` is a parameter that varies in a loop, given via Options (see below).
 
+### Options
 
-3.2. Options
-------------
-
--problemfolder <S>  Folder where the CNF files for the random problems are
+- `-problemfolder <S>`  Folder where the CNF files for the random problems are
                     saved. Subfolders will be created for problem classes 
                     automatically.
--resultfolder <S>   Folder where the results are saved.
--force_save_cnf     Save the CNF of the current sample to the problemfolder
+- `-resultfolder <S>`  Folder where the results are saved.
+- `-force_save_cnf`     Save the CNF of the current sample to the problemfolder
                     regardless of satisfiability.
--samplestart <N>    Start index for problem samples, inclusive (0::9999) [0]
--sampleend <N>      End index for problem samples, exclusive (0::10000) [100]
--k <N>              The length of clauses made in random problems (2::256) [3]
--alpha <F>          The ratio of clauses made, relative to the number of
-                    variables in the problem (0::1e10) [4.25]
--nstart <F>         Starting value of the problem size exponent, inclusive,
-                    (1::100) [1.0]
--nend <F>           Ending value of the problem size exponent, inclusive,
-                    (1::100) [5.0]
--nstep <F>          Step value of the problem size exponent (0::100) [0.5]
--rerun              Run the given sample, even if it has been solved before
+- `-samplestart <N>`    Start index for problem samples, inclusive `(0::9999) [0]`
+- `-sampleend <N>`      End index for problem samples, exclusive `(0::10000) [100]`
+- `-k <N>`              The length of clauses made in random problems `(2::256) [3]`
+- `-alpha <F>`          The ratio of clauses made, relative to the number of
+                    variables in the problem `(0::1e10) [4.25]`
+- `-nstart <F>`         Starting value of the problem size exponent, inclusive,
+                    `(1::100) [1.0]`
+- `-nend <F>`           Ending value of the problem size exponent, inclusive,
+                    `(1::100) [5.0]`
+- `-nstep <F>`          Step value of the problem size exponent `(0::100) [0.5]`
+- `-rerun`              Run the given sample, even if it has been solved before
 
 4. The 'speedtest' command
 --------------------------
