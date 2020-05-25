@@ -1,0 +1,11 @@
+To compile the AnalogSat Frontend, you can use one of the following:
+
+- On Windows, use the main Visual Studio solution file (../AnalogSat.sln) 
+  to compile the Frontend. The solution file also contains the
+  MiniSat and AnalogSat libraries as additional projects, which will be
+  compiled along with the Frontend. The NVIDIA CUDA Toolkit to be installed.
+
+- On Linux, the AnalogSat and MiniSat libraries must be compiled first. 
+  See the COMPILE.txt file for instructions in the folders of both libraries
+  for instructions. Then, use the provided "build.sh" shell script. 
+  The script requires the NVIDIA CUDA compiler "nvcc". 
