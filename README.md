@@ -1,5 +1,5 @@
 # AnalogSat
-Simulations of continuous-time dynamical systems (CTDS) that solve Boolean satisfiability (SAT) problems or minimize the number of violated clauses.
+Simulations of continuous-time dynamical systems (CTDS) that solve Boolean satisfiability (SAT) problems or minimize the number of violated clauses (MAXSAT).
 
 Corresponding publication:
 "_Accelerating a continuous-time SAT solver using GPUs_"
