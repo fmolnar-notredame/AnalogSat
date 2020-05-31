@@ -5,7 +5,7 @@ Copyright(C) 2019 Ferenc Molnar
 License: GNU GPL v3.
 
 Simulations of continuous-time dynamical systems (CTDS) that solve Boolean
-satisfiability (SAT) problems or minimize the number of violated clauses.
+satisfiability (SAT) problems or minimize the number of violated clauses (MAXSAT).
 
 This program can be used as a SAT solver on a given CNF input. In addition, 
 pre-defined command configurations are available to re-create the results 
