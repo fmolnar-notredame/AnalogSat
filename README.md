@@ -6,6 +6,10 @@ Corresponding publication:
 by F. Molnar, S. R. Kharel, X. Hu, Z. Toroczkai.
 DOI: _to be added_
 
+This work was supported in part by the National Science Foundation under Grants CCF-1644368, 1640081 and CNS1629914, and by the Nanoelectronics Research Corporation, a wholly-owned subsidiary of the Semiconductor
+Research Corporation, through Extremely Energy Efficient Collective
+Electronics, an SRC-NRI Nanoelectronics Research Initiative under Research
+Task ID 2698.004.
 
 This software package contains 3 separate modules:
 
