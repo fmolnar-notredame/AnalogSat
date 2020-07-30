@@ -1,10 +1,11 @@
 # AnalogSat
 Simulations of continuous-time dynamical systems (CTDS) that solve Boolean satisfiability (SAT) problems or minimize the number of violated clauses (MAXSAT).
 
-Corresponding publication:
-"_Accelerating a continuous-time SAT solver using GPUs_"
-by F. Molnar, S. R. Kharel, X. Hu, Z. Toroczkai.
-DOI: _to be added_
+Corresponding publication:  
+"_Accelerating a continuous-time SAT solver using GPUs_",  
+F. Molnar, S. R. Kharel, X. S. Hu, Z. Toroczkai,  
+Computer Physics Communications, Volume 256, November 2020, 107469.  
+DOI: [https://doi.org/10.1016/j.cpc.2020.107469](https://doi.org/10.1016/j.cpc.2020.107469)
 
 This work was supported in part by the National Science Foundation under Grants CCF-1644368, 1640081 and CNS1629914, and by the Nanoelectronics Research Corporation, a wholly-owned subsidiary of the Semiconductor
 Research Corporation, through Extremely Energy Efficient Collective
